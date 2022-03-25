@@ -5,7 +5,9 @@
   "main": "bvt.js",
   "scripts": {
     "test": "echo \"no tests yet\"",
-    "start": "node bvt.js"
+    "start": "node bvt.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
     "@psf/bch-js": "^4.18.0",
     "jwt-bch-lib": "^1.3.0",
     "node-telegram-bot-api": "^0.50.0",
-    "shelljs": "^0.8.4"
-  }
+    "shelljs": "^0.8.4",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
